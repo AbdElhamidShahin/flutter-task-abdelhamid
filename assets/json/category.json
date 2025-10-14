@@ -1,0 +1,120 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "كل العروض",
+      "image": "https://example.com/images/all_offers.png",
+      "products": [
+        {
+          "id": 1,
+          "title": "جاكيت من الصوف الأسود",
+          "image": "https://example.com/images/black_jacket.png",
+          "price": 32000,
+          "old_price": 66000,
+          "sales": "3.3K+"
+        },
+        {
+          "id": 2,
+          "title": "قميص كاجوال بني",
+          "image": "https://example.com/images/brown_shirt.png",
+          "price": 32000,
+          "old_price": 66000,
+          "sales": "3.3K+"
+        },
+        {
+          "id": 3,
+          "title": "حذاء رياضي رجالي أسود",
+          "image": "https://example.com/images/black_shoes.png",
+          "price": 32000,
+          "old_price": 66000,
+          "sales": "3.3K+"
+        },
+        {
+          "id": 1,
+          "title": "جاكيت من الصوف الأسود",
+          "image": "https://example.com/images/black_jacket.png",
+          "price": 32000,
+          "old_price": 66000,
+          "sales": "3.3K+"
+        },
+        {
+          "id": 2,
+          "title": "قميص كاجوال بني",
+          "image": "https://example.com/images/brown_shirt.png",
+          "price": 32000,
+          "old_price": 66000,
+          "sales": "3.3K+"
+        },
+        {
+          "id": 3,
+          "title": "حذاء رياضي رجالي أسود",
+          "image": "https://example.com/images/black_shoes.png",
+          "price": 32000,
+          "old_price": 66000,
+          "sales": "3.3K+"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ملابس",
+      "image": "https://example.com/images/clothes.png",
+      "products": [
+        {
+          "id": 5,
+          "title": "قميص كتان صيفي",
+          "image": "https://example.com/images/summer_shirt.png",
+          "price": 25000,
+          "old_price": 50000,
+          "sales": "3.3K+"
+        },
+        {
+          "id": 6,
+          "title": "بنطلون جينز أزرق",
+          "image": "https://example.com/images/blue_jeans.png",
+          "price": 28000,
+          "old_price": 56000,
+          "sales": "3.3K+"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ساعات",
+      "image": "https://example.com/images/watches.png",
+      "products": [
+        {
+          "id": 9,
+          "title": "ساعة ذكية FitTime",
+          "image": "https://example.com/images/smartwatch.png",
+          "price": 90000,
+          "old_price": 120000,
+          "sales": "3.3K+"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "إلكترونيات",
+      "image": "https://example.com/images/electronics.png",
+      "products": [
+        {
+          "id": 7,
+          "title": "هاتف ذكي XPhone 12",
+          "image": "https://example.com/images/xphone12.png",
+          "price": 500000,
+          "old_price": 600000,
+          "sales": "3.3K+"
+        },
+        {
+          "id": 8,
+          "title": "سماعات لاسلكية ProSound",
+          "image": "https://example.com/images/headphones.png",
+          "price": 120000,
+          "old_price": 150000,
+          "sales": "3.3K+"
+        }
+      ]
+    }
+  ]
+}
