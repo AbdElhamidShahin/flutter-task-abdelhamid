@@ -7,49 +7,49 @@
         {
           "id": 1,
           "title": "جاكيت من الصوف الأسود",
-          "image": "https://example.com/images/black_jacket.png",
-          "price": 32000,
-          "old_price": 66000,
+          "image": "assets/images_item/Jacket.png",
+          "price": 32000000,
+          "old_price": 600000000,
           "sales": "3.3K+"
         },
         {
           "id": 2,
           "title": "قميص كاجوال بني",
-          "image": "https://example.com/images/brown_shirt.png",
-          "price": 32000,
-          "old_price": 66000,
+          "image": "assets/images_item/shirt.png",
+          "price": 32000000,
+          "old_price": 600000000,
           "sales": "3.3K+"
         },
         {
           "id": 3,
           "title": "حذاء رياضي رجالي أسود",
-          "image": "https://example.com/images/black_shoes.png",
-          "price": 32000,
-          "old_price": 66000,
+          "image": "assets/images_item/shoes.png",
+          "price": 32000000,
+          "old_price": 600000000,
           "sales": "3.3K+"
         },
         {
           "id": 1,
           "title": "جاكيت من الصوف الأسود",
-          "image": "https://example.com/images/black_jacket.png",
-          "price": 32000,
-          "old_price": 66000,
+          "image": "assets/images_item/Jacket.png",
+          "price": 32000000,
+          "old_price": 600000000,
           "sales": "3.3K+"
         },
         {
           "id": 2,
           "title": "قميص كاجوال بني",
-          "image": "https://example.com/images/brown_shirt.png",
-          "price": 32000,
-          "old_price": 66000,
+          "image": "assets/images_item/shirt.png",
+          "price": 32000000,
+          "old_price": 600000000,
           "sales": "3.3K+"
         },
         {
           "id": 3,
           "title": "حذاء رياضي رجالي أسود",
-          "image": "https://example.com/images/black_shoes.png",
-          "price": 32000,
-          "old_price": 66000,
+          "image": "assets/images_item/shoes.png",
+          "price": 32000000,
+          "old_price": 600000000,
           "sales": "3.3K+"
         }
       ]
