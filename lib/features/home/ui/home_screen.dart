@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-// استورد الملفات اللازمة
+import 'package:flutter_tast_abdelhamid/features/home/ui/widget/home_categories_list_view.dart';
 import '../logic/cubit.dart';
 import '../logic/state.dart';
 import 'widget/custom_categories_tabs_bar.dart';
@@ -48,6 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   },
                 ),
+                SizedBox(height: 33.h),
+                HomeCategoriesListview()
               ],
             );
           },
