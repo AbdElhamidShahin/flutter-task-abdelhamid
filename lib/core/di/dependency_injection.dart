@@ -11,8 +11,6 @@ final getIt = GetIt.instance;
 Future<void> setupGetIt() async {
 
   getIt.registerLazySingleton<StoreLocalData>(() => StoreLocalData());
-
-
   getIt.registerLazySingleton<HomeRepository>(() => HomeRepository(getIt()));
   getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
 

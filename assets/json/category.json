@@ -1,5 +1,4 @@
-{
-  "categories": [
+ [
     {
       "id": 1,
       "name": "كل العروض",
@@ -80,7 +79,7 @@
     },
     {
       "id": 3,
-      "name": "ساعات",
+      "name": "أكسسوارات",
       "image": "https://example.com/images/watches.png",
       "products": [
         {
@@ -117,4 +116,4 @@
       ]
     }
   ]
-}
+
