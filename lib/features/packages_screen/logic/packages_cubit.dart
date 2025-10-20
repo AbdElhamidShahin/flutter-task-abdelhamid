@@ -11,9 +11,19 @@ class PackagesCubit extends Cubit<PackagesState> {
     try {
       final response = await _packagesRepo.PackagesfetchData();
 
-      emit(PackagesState.success(response));
+      emit(PackagesState.success(response, null));
     } catch (error) {
       emit(PackagesState.error(error.toString()));
     }
   }
+
+  void selectPackage(int packageId) {
+    state.maybeWhen(
+      success: (packages, _) {
+        emit(PackagesState.success(packages, packageId));
+      },
+      orElse: () {},
+    );
+  }
+
 }

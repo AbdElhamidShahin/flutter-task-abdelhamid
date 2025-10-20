@@ -20,21 +20,27 @@ mixin _$PackagesState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<AddPackagesModel> packages) success,
+    required TResult Function(
+      List<AddPackagesModel> packages,
+      int? selectedPackageId,
+    )
+    success,
     required TResult Function(String error) error,
     required TResult Function() loading,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<AddPackagesModel> packages)? success,
+    TResult? Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult? Function(String error)? error,
     TResult? Function()? loading,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<AddPackagesModel> packages)? success,
+    TResult Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult Function(String error)? error,
     TResult Function()? loading,
     required TResult orElse(),
@@ -129,7 +135,11 @@ class _$initialImpl implements _initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<AddPackagesModel> packages) success,
+    required TResult Function(
+      List<AddPackagesModel> packages,
+      int? selectedPackageId,
+    )
+    success,
     required TResult Function(String error) error,
     required TResult Function() loading,
   }) {
@@ -140,7 +150,8 @@ class _$initialImpl implements _initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<AddPackagesModel> packages)? success,
+    TResult? Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult? Function(String error)? error,
     TResult? Function()? loading,
   }) {
@@ -151,7 +162,8 @@ class _$initialImpl implements _initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<AddPackagesModel> packages)? success,
+    TResult Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult Function(String error)? error,
     TResult Function()? loading,
     required TResult orElse(),
@@ -211,7 +223,7 @@ abstract class _$$SuccessImplCopyWith<$Res> {
     $Res Function(_$SuccessImpl) then,
   ) = __$$SuccessImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({List<AddPackagesModel> packages});
+  $Res call({List<AddPackagesModel> packages, int? selectedPackageId});
 }
 
 /// @nodoc
@@ -227,13 +239,17 @@ class __$$SuccessImplCopyWithImpl<$Res>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? packages = null}) {
+  $Res call({Object? packages = null, Object? selectedPackageId = freezed}) {
     return _then(
       _$SuccessImpl(
         null == packages
             ? _value._packages
             : packages // ignore: cast_nullable_to_non_nullable
                   as List<AddPackagesModel>,
+        freezed == selectedPackageId
+            ? _value.selectedPackageId
+            : selectedPackageId // ignore: cast_nullable_to_non_nullable
+                  as int?,
       ),
     );
   }
@@ -242,8 +258,10 @@ class __$$SuccessImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$SuccessImpl implements _Success {
-  const _$SuccessImpl(final List<AddPackagesModel> packages)
-    : _packages = packages;
+  const _$SuccessImpl(
+    final List<AddPackagesModel> packages,
+    this.selectedPackageId,
+  ) : _packages = packages;
 
   final List<AddPackagesModel> _packages;
   @override
@@ -254,8 +272,11 @@ class _$SuccessImpl implements _Success {
   }
 
   @override
+  final int? selectedPackageId;
+
+  @override
   String toString() {
-    return 'PackagesState.success(packages: $packages)';
+    return 'PackagesState.success(packages: $packages, selectedPackageId: $selectedPackageId)';
   }
 
   @override
@@ -263,12 +284,17 @@ class _$SuccessImpl implements _Success {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SuccessImpl &&
-            const DeepCollectionEquality().equals(other._packages, _packages));
+            const DeepCollectionEquality().equals(other._packages, _packages) &&
+            (identical(other.selectedPackageId, selectedPackageId) ||
+                other.selectedPackageId == selectedPackageId));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_packages));
+  int get hashCode => Object.hash(
+    runtimeType,
+    const DeepCollectionEquality().hash(_packages),
+    selectedPackageId,
+  );
 
   /// Create a copy of PackagesState
   /// with the given fields replaced by the non-null parameter values.
@@ -282,35 +308,41 @@ class _$SuccessImpl implements _Success {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<AddPackagesModel> packages) success,
+    required TResult Function(
+      List<AddPackagesModel> packages,
+      int? selectedPackageId,
+    )
+    success,
     required TResult Function(String error) error,
     required TResult Function() loading,
   }) {
-    return success(packages);
+    return success(packages, selectedPackageId);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<AddPackagesModel> packages)? success,
+    TResult? Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult? Function(String error)? error,
     TResult? Function()? loading,
   }) {
-    return success?.call(packages);
+    return success?.call(packages, selectedPackageId);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<AddPackagesModel> packages)? success,
+    TResult Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult Function(String error)? error,
     TResult Function()? loading,
     required TResult orElse(),
   }) {
     if (success != null) {
-      return success(packages);
+      return success(packages, selectedPackageId);
     }
     return orElse();
   }
@@ -354,9 +386,13 @@ class _$SuccessImpl implements _Success {
 }
 
 abstract class _Success implements PackagesState {
-  const factory _Success(final List<AddPackagesModel> packages) = _$SuccessImpl;
+  const factory _Success(
+    final List<AddPackagesModel> packages,
+    final int? selectedPackageId,
+  ) = _$SuccessImpl;
 
   List<AddPackagesModel> get packages;
+  int? get selectedPackageId;
 
   /// Create a copy of PackagesState
   /// with the given fields replaced by the non-null parameter values.
@@ -436,7 +472,11 @@ class _$ErrorImpl implements _Error {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<AddPackagesModel> packages) success,
+    required TResult Function(
+      List<AddPackagesModel> packages,
+      int? selectedPackageId,
+    )
+    success,
     required TResult Function(String error) error,
     required TResult Function() loading,
   }) {
@@ -447,7 +487,8 @@ class _$ErrorImpl implements _Error {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<AddPackagesModel> packages)? success,
+    TResult? Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult? Function(String error)? error,
     TResult? Function()? loading,
   }) {
@@ -458,7 +499,8 @@ class _$ErrorImpl implements _Error {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<AddPackagesModel> packages)? success,
+    TResult Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult Function(String error)? error,
     TResult Function()? loading,
     required TResult orElse(),
@@ -563,7 +605,11 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<AddPackagesModel> packages) success,
+    required TResult Function(
+      List<AddPackagesModel> packages,
+      int? selectedPackageId,
+    )
+    success,
     required TResult Function(String error) error,
     required TResult Function() loading,
   }) {
@@ -574,7 +620,8 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<AddPackagesModel> packages)? success,
+    TResult? Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult? Function(String error)? error,
     TResult? Function()? loading,
   }) {
@@ -585,7 +632,8 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<AddPackagesModel> packages)? success,
+    TResult Function(List<AddPackagesModel> packages, int? selectedPackageId)?
+    success,
     TResult Function(String error)? error,
     TResult Function()? loading,
     required TResult orElse(),
