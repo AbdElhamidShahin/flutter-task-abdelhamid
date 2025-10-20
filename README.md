@@ -1,16 +1,64 @@
-# flutter_tast_abdelhamid
+# Flutter Task Abdelhamid
 
-A new Flutter project.
+A Flutter application built to demonstrate clean architecture, organized structure, and modern state management practices.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🧱 Tech Stack & Architecture
 
-A few resources to get you started if this is your first Flutter project:
+This project follows **MVVM architecture** and **clean code principles** to ensure clarity, scalability, and easy maintenance.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🧩 Architecture & Design
+
+- **MVVM (Model–View–ViewModel):** Provides a clear separation between UI and business logic.
+- **Feature-based structure:** Each feature is isolated in its own folder for better project organization.
+- **Clean Code practices:** Consistent naming, clear responsibilities, and reusable components.
+
+---
+
+### 🔄 State Management
+
+- **BLoC (Cubit):** Used to manage application state in a predictable and testable way.
+
+---
+
+### 💉 Dependency Injection
+
+- **GetIt & Injectable:** Simplifies dependency management and keeps components loosely coupled.
+
+---
+
+### 🧭 Navigation
+
+- **GoRouter:** Handles app navigation and supports deep linking.
+
+---
+
+### 🌐 Networking
+
+- **Dio:** A powerful HTTP client for handling APIs, error management, and interceptors.
+
+---
+
+### ⚙️ Code Generation & Data Modeling
+
+- **Freezed:** Generates immutable data classes with minimal boilerplate.
+- **Json Serializable:** Simplifies converting JSON data to and from Dart objects.
+
+---
+
+### 🎨 UI & Responsiveness
+
+- **Flutter ScreenUtil:** Helps create responsive layouts that look great on all screen sizes.
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+flutter pub get
+flutter run
