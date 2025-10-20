@@ -41,5 +41,9 @@ class TextStyles {
     fontSize: 14.sp,
     fontWeight: FontWeight.w700,
     color: AppColors.blueMain,
+  );  static TextStyle font14DarkRegular = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+    color: AppColors.blackText,
   );
 }

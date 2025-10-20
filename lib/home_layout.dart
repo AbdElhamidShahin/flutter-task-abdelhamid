@@ -6,6 +6,7 @@ import 'package:flutter_tast_abdelhamid/core/theming/app_colors.dart';
 import 'package:flutter_tast_abdelhamid/features/home/ui/home_screen.dart';
 import 'features/home/logic/cubit.dart';
 import 'features/home/ui/widget/buildNavItem.dart';
+import 'features/packages_screen/ui/packages_screen.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({Key? key}) : super(key: key);
@@ -41,7 +42,7 @@ class AppLayout extends StatelessWidget {
   final List<Widget> screens = const [
     ProfileScreen(),
     MyAdsScreen(),
-    AddAdScreen(),
+    PackagesScreen(),
     ChatScreen(),
     HomeScreen(),
   ];
