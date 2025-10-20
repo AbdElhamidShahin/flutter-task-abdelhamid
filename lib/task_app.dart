@@ -14,6 +14,8 @@ class TaskApp extends StatelessWidget {
       child: MaterialApp.router(
         routerConfig: AppRouter.router,
         theme: ThemeData(
+          fontFamily: 'Tajawal',
+
           primaryColor: AppColors.blueMain,
           scaffoldBackgroundColor: Colors.white,
         ),

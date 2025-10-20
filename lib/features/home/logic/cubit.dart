@@ -1,9 +1,12 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_tast_abdelhamid/features/home/logic/state.dart';
+import '../../../core/networking/category_model.dart';
 import '../data/repos/repos.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   final HomeRepository _storeRepository;
+  int selectedIndex = 0;
+  List<CategoryModel> _categories = [];
 
   HomeCubit(this._storeRepository) : super(HomeState.initial());
 
@@ -15,5 +18,18 @@ class HomeCubit extends Cubit<HomeState> {
     } catch (error) {
       emit(HomeState.error(error: error.toString()));
     }
+  }
+
+  void changeCategory(int index) {
+    selectedIndex = index;
+    emit(HomeState.success(_categories));
+  }
+}
+
+class NavigationCubit extends Cubit<int> {
+  NavigationCubit() : super(4);
+
+  void changeTab(int index) {
+    emit(index);
   }
 }
