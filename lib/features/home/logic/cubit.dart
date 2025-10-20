@@ -25,3 +25,11 @@ class HomeCubit extends Cubit<HomeState> {
     emit(HomeState.success(_categories));
   }
 }
+
+class NavigationCubit extends Cubit<int> {
+  NavigationCubit() : super(4);
+
+  void changeTab(int index) {
+    emit(index);
+  }
+}
