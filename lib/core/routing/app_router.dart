@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tast_abdelhamid/features/packages_screen/logic/packages_cubit.dart';
 
+import '../../features/filter_screen/ui/filter_screen.dart';
 import '../../home_layout.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_tast_abdelhamid/core/di/dependency_injection.dart';
@@ -23,6 +24,13 @@ abstract class AppRouter {
             ],
             child: AppLayout(),
           );
+        },
+      ),
+
+      GoRoute(
+        path: routes.FilterScreen,
+        builder: (BuildContext context, GoRouterState state) {
+          return FilterScreen();
         },
       ),
     ],

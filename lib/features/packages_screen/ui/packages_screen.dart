@@ -30,43 +30,6 @@ class _PackagesScreenState extends State<PackagesScreen> {
           SizedBox(height: 20.h),
           Expanded(child: PackagesListView()),
 
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.w),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Container(
-                width: double.infinity.w,
-
-                decoration: BoxDecoration(color: Color(0xFFFF7F7F7)),
-                child: Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(
-                        "باقات مخصصة لك",
-                        style: TextStyles.font14MainOrangeMedium.copyWith(
-                          color: AppColors.blackText,
-                        ),
-                      ),
-                      Text(
-                        "تواصل معنا لأختيار الباقة المناسبة لك",
-                        style: TextStyles.font12BlackRegular.copyWith(
-                          color: AppColors.blackText,
-                        ),
-                      ),
-                      Text(
-                        "فريق المبيعات",
-                        style: TextStyles.font16BlackBold.copyWith(
-                          color: AppColors.blue,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
         ],
       ),
     );
