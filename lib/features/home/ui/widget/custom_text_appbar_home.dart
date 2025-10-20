@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import '../../../../core/routing/routes.dart';
 import '../../../../core/theming/stayles.dart';
 
 class CustomTextAppbarHome extends StatelessWidget {
@@ -11,7 +13,11 @@ class CustomTextAppbarHome extends StatelessWidget {
       child: Row(
         children: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+
+              context.go(routes.FilterScreen);
+
+            },
             icon: Icon(
               Icons.arrow_back,
               size: 24,
